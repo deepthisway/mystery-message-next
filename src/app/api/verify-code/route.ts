@@ -5,7 +5,10 @@ import { NextRequest, NextResponse } from "next/server";
 export async function POST(request: NextRequest) {
   await dbConnect();
   try {
-    const { username, code } = request.json();
+    const { username, code } = await request.json(); //request.json() is used because it will automatically parse the request body to json
+    // to get the username and code from the request we can also use
+    // const username = request.body.username;
+    // const code = request.body.code;
     const decodedUsername = decodeURIComponent(username);
 
     const user = await UserModel.findOne({ username: decodedUsername });
