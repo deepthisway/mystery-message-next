@@ -3,6 +3,7 @@ import React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
 import AuthProvider from "@/context/authProvider";
+import { Toaster } from "@/components/ui/toaster"
 
 const metadata: Metadata = {
   authors: [{ name: "Deepanshu" }],
@@ -20,9 +21,9 @@ export default function RootLayout({
       <AuthProvider>
       <body>
         {children}
+      <Toaster/>
       </body>
       </AuthProvider>
-      
     </html>
   );
 }
