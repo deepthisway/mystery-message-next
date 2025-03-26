@@ -35,7 +35,7 @@ export async function GET(request: NextRequest) {
         })
     }
     return Response.json({
-        message: "Username is Unique and available"
+        message: "Username is Unique"
     });
 
 
