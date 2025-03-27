@@ -6,3 +6,5 @@ Notes:
 2. router.replace()
 ✅ Replaces the current URL in the history stack.
 ✅ Users cannot go back to the previous page using the back button.
+
+3. How to put production grade errors. 
