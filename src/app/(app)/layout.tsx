@@ -1,7 +1,6 @@
 'use client'
 import React from "react";
 import type { Metadata } from "next";
-import "./globals.css";
 import AuthProvider from "@/context/authProvider";
 import { Toaster } from "@/components/ui/toaster"
 
